@@ -18,10 +18,10 @@ td {
     box-sizing: border-box;
 }
 
-.left-box {
+.box-left {
     background-color: rgb(248, 21, 21);
 }
 
-.right-box {
+.box-right {
     background-color: rgb(175, 0, 175);
 }
