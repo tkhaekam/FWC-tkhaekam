@@ -1,4 +1,4 @@
-// ดึงค่า Element ต่างๆ จาก HTML มาไว้ในตัวแปร
+
 const leftInput = document.getElementById('leftMember');
 const rightInput = document.getElementById('rightMember');
 const operatorSelect = document.getElementById('operator');

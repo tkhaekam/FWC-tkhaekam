@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#balloon {
+   
+    width: 200px;
+    height: 220px;
+    background-color: red;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
