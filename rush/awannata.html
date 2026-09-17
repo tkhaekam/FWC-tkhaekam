@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; padding-top: 70px; }
+
+        .navbar {
+            position: fixed;          /* ติดด้านบนตลอดตอนเลื่อน */
+            top: 0; left: 0;
+            width: 100%;
+            height: 70px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 2px solid #000;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+        .menu {
+            display: flex;            /* เมนูเรียงแนวนอน */
+            list-style: none;         /* เอาจุดหน้า list ออก */
+            gap: 24px;
+        }
+        .menu a {
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;    /* เอาเส้นใต้ออก */
+        }
+        .menu a:hover { text-decoration: underline; }
+
+        section { scroll-margin-top: 70px; min-height: 100vh; padding: 30px; }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#home" class="logo">Portfolio</a>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section dark">
+    <h1 style="text-align: center;">Welcome to my Portfolio</h1>
+  </section>
+
+  <section id="about" class="section dark">
+    <img src="images/me.jpg" alt="Pichapa" class="photo">
+    <h2>About Me</h2>
+    <p>Hi my name is Pichapa Rattanakrathum from Panatpittayakarn School ...</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul><li>HTML</li><li>CSS</li></ul>
+  </section>
+
+  <section id="projects" class="section dark">
+    <h2>Projects</h2>
+    <p>...</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <a href="https://github.com/xxx">GitHub</a> |
+    <a href="https://instagram.com/xxx">Instagram</a> |
+    <a href="https://linkedin.com/in/xxx">LinkedIn</a>
+  </section>
+
+</body>
+</html>

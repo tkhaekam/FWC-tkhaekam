@@ -18,14 +18,19 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 100px;
+
+    background-image: url("https://images.unsplash.com/photo-1477132394330-d2376dc4c091?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: white;
 }
 
 .home h1 {
     font-size: 60px;
-    margin-bottom: 120px;
+    margin-bottom: 160px;
 }
 
 .home p {
@@ -49,6 +54,29 @@ body {
     font-weight: bold;
 }
 
-.buttons a:hover {
-    transform: scale(1.05);
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+    .home {
+        padding: 40px 20px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    .home p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttons a {
+        padding: 12px 35px;
+        font-size: 18px;
+    }
 }

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; padding-top: 70px; 
+        background: #000000;
+        color: #ffffff;
+    }
+
+        .navbar {
+            position: fixed;          /* ตรงนี้ต้องติดด้านบนตลอดตอนที่เลื่อน */
+            top: 0; left: 0;
+            width: 100%;
+            height: 70px;
+            background: #000000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 2px solid #ffffff;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color:#ffffff;
+            text-decoration: none;
+        }
+        .menu {
+            display: flex;            /* เมนู  แนวนอน */
+            list-style: none;         /* เอาจุดหน้า list ออก */
+            gap: 24px;
+        }
+        .menu a {
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;    /* เอาขีดเส้นใต้ออก */
+        }
+        .menu a:hover { text-decoration: underline; }
+
+        section { scroll-margin-top: 70px; min-height: 100vh; padding: 30px; }
+
+
+        #about {
+            text-align: center;
+        }
+
+        #about .photo {
+            display: block;
+            width: 330px;
+            height: 395px;
+            object-fit: cover;
+            margin: 0 auto 40px;
+        }
+
+        #about h2 {
+            font-size: 70px;
+            margin-bottom: 35px;
+        }
+
+        #about p {
+            font-size: 28px;
+            line-height: 1.5;
+        }
+
+        
+
+        /* จัด Skills */
+        #skills {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+
+
+        #skills .photo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin: 30px auto;
+        }
+        #skills .photo1 {
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+            margin: 30px auto;
+        }
+
+        /* จัด Projects */
+        #projects {
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+
+        #projects p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        #projects .photo {
+            width: 1000px;
+            height: 600px;
+        }
+
+        /* จัด Contact */
+        #contact {
+            padding: 70px 10%;
+        }
+
+        #contact h2 {
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+
+        #contact a {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    margin: 20px 10px;
+}
+
+        #contact img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0;
+}
+
+
+    /* กำหนดขนาดของโทรศัพท์ เดะลองเทสก่อน*/
+        @media (max-width: 768px) {
+            .navbar {
+                height: auto;
+                padding: 15px;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .menu {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .menu a {
+                font-size: 16px;
+            }
+
+            #about h2,
+            #skills h2,
+            #projects h2,
+            #contact h2 {
+                font-size: 40px;
+            }
+
+            #about p,
+            #projects p {
+                font-size: 20px;
+            }
+
+            #about .photo {
+                width: 250px;
+                height: auto;
+            }
+
+            #skills .photo,
+            #skills .photo1,
+            #projects .photo {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Portfolio</a>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section dark">
+    <img src="images/guide/guide 1.jpg" alt="Guide" class="photo">
+    <h2>❤ About Me ❤</h2>
+        <p>Hello my name is Thanapat Khaekam AKA Guide from KMITL </p>
+            
+            <h>i love to play game,make music,play basketball and sleep zzzz🥱 </h>
+  </section>
+  
+
+  <section id="skills" class="section dark"> 
+    <h2>My Skills</h2>
+    <div class="skill-images">
+        <img src="images/guide/skill 1.1.jpg" alt="Guide" class="photo1">
+        <img src="images/guide/skill 1.0.jpg" alt="Guide" class="photo">
+    </div>
+    <h1>Music Producer </h1>
+    <h>In love with sound i always trying to level up my mastering skills. </h>
+    
+  </section>
+
+  <section id="projects" class="section dark">
+    <h2>Projects</h2>
+    <h1>1.First-Year Final Project ATM</h1>
+    <p>This is my final project from my first year. It was a great project that I really enjoyed working on. It was also a little tiring and stressful at times, but in the end, we got through it successfully and I’m really proud of what we accomplished.
+ </p>
+    <img src="images/guide/project 1.0.jpg" alt="Guide" class="photo">
+
+    <h1>2.TAO BIN Profit & Cost Analysis Project</h1>
+    <p>This is a project I completed in the first semester of my second year. I chose this topic because I bought a drink from a TAO BIN machine and became curious about how the machine’s costs and profits are calculated.
+        
+ </p>
+ <img src="images/guide/project 2.0.png" alt="Guide" class="photo">
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <a href="https://github.com/tkhaekam" target="_blank">
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
+             alt="GitHub">
+    </a>
+
+    <a href="https://www.instagram.com/thanapatkh1?stkn=dHZia2JsdGVjZ2Y2&utm_source=qr"
+       target="_blank">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/3840px-Instagram_logo_2016.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+             alt="Instagram">
+    </a>
+</section>
+
+</body>
+</html>
