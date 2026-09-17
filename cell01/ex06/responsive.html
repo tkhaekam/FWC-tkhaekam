@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        td {
+            border: 1px solid #333;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .box-left {
+            background-color: red;
+        }
+
+        .box-right {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="box-left">First Cat</td>
+            <td class="box-right">Second Muhahaha</td>
+        </tr>
+    </table>
+</body>
+</html>
