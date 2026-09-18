@@ -13,7 +13,7 @@
     }
 
         .navbar {
-            position: fixed;          /* ตรงนี้ต้องติดด้านบนตลอดตอนที่เลื่อน */
+            position: fixed;
             top: 0; left: 0;
             width: 100%;
             height: 70px;
@@ -32,14 +32,14 @@
             text-decoration: none;
         }
         .menu {
-            display: flex;            /* เมนู  แนวนอน */
-            list-style: none;         /* เอาจุดหน้า list ออก */
+            display: flex;
+            list-style: none;
             gap: 24px;
         }
         .menu a {
             font-size: 20px;
             color: #ffffff;
-            text-decoration: none;    /* เอาขีดเส้นใต้ออก */
+            text-decoration: none;
         }
         .menu a:hover { text-decoration: underline; }
 
@@ -95,6 +95,32 @@
             margin: 30px auto;
         }
 
+
+        /* จัด work exp */
+        #workexperience {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        #workexperience h2 {
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+        
+        #workexperience .photo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin: 30px auto;
+        }
+
+        #workexperience .photo1 {
+            width: 600px;
+            height: 300px;
+            object-fit: contain;
+            margin: 30px auto;
+        }
+
         /* จัด Projects */
         #projects {
             text-align: center;
@@ -110,9 +136,12 @@
             font-size: 18px;
         }
 
-        #projects .photo {
-            width: 1000px;
-            height: 600px;
+        #projects .photo,
+        #projects .photo1 {
+            width: 700px;
+            height: 500px;
+            object-fit: contain;
+            margin: 30px auto;
         }
 
         /* จัด Contact */
@@ -126,23 +155,23 @@
         }
 
         #contact a {
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
-    text-decoration: none;
-    margin: 20px 10px;
-}
+            display: inline-block;
+            font-size: 0;
+            line-height: 0;
+            text-decoration: none;
+            margin: 20px 10px;
+        }
 
         #contact img {
-    display: block;
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    margin: 0;
-}
+            display: block;
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin: 0;
+        }
 
 
-    /* กำหนดขนาดของโทรศัพท์ เดะลองเทสก่อน*/
+    /* กำหนดขนาดของโทรศัพท์ */
         @media (max-width: 768px) {
             .navbar {
                 height: auto;
@@ -163,6 +192,7 @@
 
             #about h2,
             #skills h2,
+            #workexperience h2,
             #projects h2,
             #contact h2 {
                 font-size: 40px;
@@ -178,6 +208,8 @@
                 height: auto;
             }
 
+            #workexperience .photo,
+            #workexperience .photo1,
             #skills .photo,
             #skills .photo1,
             #projects .photo {
@@ -196,6 +228,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#workexperience">WorkExperience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -211,19 +244,32 @@
   
 
   <section id="skills" class="section dark"> 
-    <h2>My Skills</h2>
+    <h2>⭐ My Skills ⭐</h2>
     <div class="skill-images">
         <img src="images/guide/skill 1.1.jpg" alt="Guide" class="photo1">
         <img src="images/guide/skill 1.0.jpg" alt="Guide" class="photo">
     </div>
-    <h1>Music Producer </h1>
+    <h1>🦾 Music Producer 😼 </h1>
     <h>In love with sound i always trying to level up my mastering skills. </h>
     
   </section>
 
+
+  <section id="workexperience" class="section dark"> 
+    <h2>💎 My WorkExperience 🐱</h2>
+    <div class="WorkExperience-images">
+        <img src="images/guide/workExp 1.jpg" alt="Guide" class="photo1">
+        <img src="images/guide/workExp 2.jpg" alt="Guide" class="photo1">
+    </div>
+    <h1>🎥Cinema staff ❤ </h1>
+    <h>I love watching movies, so I decided to work at a cinema. It was a lot of fun, and the best part was getting to watch movies for free!
+ </h>
+    
+  </section>
+
   <section id="projects" class="section dark">
-    <h2>Projects</h2>
-    <h1>1.First-Year Final Project ATM</h1>
+    <h2>🔧 Projects 🌍</h2>
+    <h1>1.First-Year Final Project ATM 💵</h1>
     <p>This is my final project from my first year. It was a great project that I really enjoyed working on. It was also a little tiring and stressful at times, but in the end, we got through it successfully and I’m really proud of what we accomplished.
  </p>
     <img src="images/guide/project 1.0.jpg" alt="Guide" class="photo">
@@ -233,10 +279,11 @@
         
  </p>
  <img src="images/guide/project 2.0.png" alt="Guide" class="photo">
+ <img src="images/guide/project 3.0.jpg" alt="Guide" class="photo">
   </section>
 
   <section id="contact" class="section">
-    <h2>Contact</h2>
+    <h2>Contact📲</h2>
 
     <a href="https://github.com/tkhaekam" target="_blank">
         <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
@@ -248,7 +295,7 @@
         <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/3840px-Instagram_logo_2016.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
              alt="Instagram">
     </a>
-</section>
+  </section>
 
 </body>
 </html>
